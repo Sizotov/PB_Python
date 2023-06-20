@@ -36,3 +36,12 @@ def change(index: int, new: dict [str, str]):
     for key, field in new.items():
         if field != '':
             phone_book[index - 1][key] = field
+
+def delete(word:str) -> list[dict]:
+    result = []
+    for contact in phone_book:
+        for key, value in contact.items():
+            if word.lower() in value.lower():
+                result.pop(contact)
+                break
+    return result

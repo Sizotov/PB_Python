@@ -42,6 +42,13 @@ def input_contact(message: str) -> dict[str, str]:
 def input_return(message: str) -> str:
     return input(message)
 
+def input_contact_delete(message: str) -> dict[str, str]:
+    print(message)
+    name = input(new_contact[0])
+    phone = input(new_contact[0])
+    comment = input(new_contact[0])
+    return {'name': name, 'phone': phone, 'comment': comment}
+
 
 
 

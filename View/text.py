@@ -27,3 +27,6 @@ def contact_saved(name: str):
 
 def contact_changed(name: str):
     return f'Контакт {name} успешно изменен'
+
+def contact_deleted(name: str):
+    return f'Контакт {name} успешно удален'
