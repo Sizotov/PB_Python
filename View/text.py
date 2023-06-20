@@ -15,6 +15,8 @@ book_error = 'Телефонная книга пуста или файл не о
 
 open_successful = 'Телефонная книга успешно открыта'
 
+save_successful = 'Телефонная книга успешно сохранена'
+
 input_new_contact = 'Введите данные нового контакта'
 new_contact = ['Введите имя контакта: ', 'Введите телефон: ', 'Введите коммент: ']
 search_word = 'Введите искомый элемент: '
@@ -30,3 +32,4 @@ def contact_changed(name: str):
 
 def contact_deleted(name: str):
     return f'Контакт {name} успешно удален'
+

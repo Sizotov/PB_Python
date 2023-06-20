@@ -9,6 +9,11 @@ def open_file():
         user_id, name, phone, comment, *_ = contact.strip().split(':')
         phone_book.append({'id': user_id, 'name': name, 'phone': phone, 'comment': comment})
 
+def save_file():
+    with open(path, 'w') as file:
+        data = file.write('id', 'name', 'phone', 'comment')
+
+
 
 def check_id():
     uid_list = []

@@ -11,11 +11,12 @@ def start():
                 model.open_file()
                 print_message(text.open_successful)
             case 2:
-                pass
+                model.save_file()
+                print_message(text.save_successful)
             case 3:
                 show_contacts(model.phone_book)
             case 4:
-                new = input_contact(text.input_mew_contact)
+                new = input_contact(text.input_new_contact)
                 model.add_contact(new)
                 print_message(text.contact_saved(new.get('name')))
             case 5:

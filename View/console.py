@@ -17,6 +17,14 @@ def print_message(message: str):
     print('=' * length + '\n')
 
 
+def save_file(message: str) -> dict[str, str]:
+    print(message)
+    name = input(new_contact[0])
+    phone = input(new_contact[0])
+    comment = input(new_contact[0])
+    return {'name': name, 'phone': phone, 'comment': comment}
+
+
 def show_contacts(book: list[dict[str, str]]):
     if book:
         print('\n' + '=' * 67)
@@ -48,6 +56,7 @@ def input_contact_delete(message: str) -> dict[str, str]:
     phone = input(new_contact[0])
     comment = input(new_contact[0])
     return {'name': name, 'phone': phone, 'comment': comment}
+
 
 
 
